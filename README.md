@@ -1,12 +1,12 @@
 # 搭建框架说明
-1、准备开发环境
-①启动apache和mysql/Nodejs(8.1.1)
-②所有的服务器端php文件修改 
- php中设置：
- header('Access-Control-Allow-Origin:http://localhost:8100');
- header('Access-Control-Allow-Credentials:true');
- 客户端请求时设置：
- this.http.get(myUrl, { withCredentials: true }) 
+1、准备开发环境<br/>
+①启动apache和mysql/Nodejs(8.1.1)<br/>
+②所有的服务器端php文件修改 <br/>
+ php中设置：<br/>
+ header('Access-Control-Allow-Origin:http://localhost:8100');<br/>
+ header('Access-Control-Allow-Credentials:true');<br/>
+ 客户端请求时设置：<br/>
+ this.http.get(myUrl, { withCredentials: true }) <br/>
 ③新建一个工程将压缩包和nodeModules准备一下，目的是实现在vsCode中打开终端之后，可以通过ionic serve -l 来启动开发服务器；否则项目无法进行
 
 2、搭建项目框架 
